@@ -1,0 +1,24 @@
+meta {
+  name: Create user
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}user
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: gqhJafqDsij3S5JvQhr32TKB1rerEgU7Xe5VmDT7
+}
+
+body:json {
+  {
+    "name": "Camilo Baquero Jimenez",
+    "email": "cami7ord23@gmail.com",
+    "internal_id": "1002381813",
+    "can_write": true
+  }
+}

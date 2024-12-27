@@ -1,0 +1,23 @@
+meta {
+  name: Update process (ReviewDocs)
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{host}}homologation-process
+  body: json
+  auth: none
+}
+
+headers {
+  x-api-key: gqhJafqDsij3S5JvQhr32TKB1rerEgU7Xe5VmDT7
+}
+
+body:json {
+  {
+    "type": "ReviewDocuments",
+    "id": "0001KPXHZ502E1C1KNPWW3DNTB",
+    "responsible": "01JG4B00Z96PN7XE5NHX5QXKC1"
+  }
+}

@@ -1,0 +1,62 @@
+meta {
+  name: Create app
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}app
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "homologame",
+    "host": "https://www.homologame.com/"
+  }
+}
+
+docs {
+  # Endpoint: Create an App
+  
+  ## **Description**
+  Creates a new app within the Wologa platform. The app is registered and can be managed through other endpoints.
+  
+  ---
+  
+  ## **Request**
+  
+  ### **Method:** `POST`  
+  **URL:** `/app`  
+  **Authentication Required:** No
+  **Content-Type:** `application/json`
+  
+  ### **Headers**
+  
+  None
+  
+  ### **Body**
+  
+  The request body should be a JSON object with the following fields:
+  
+  | Field           | Type      | Required | Description                                                              |
+  |------------------|-----------|----------|--------------------------------------------------------------------------|
+  | `name`          | `string`  | Yes      | The name of the app. Must be unique within the system.                  |
+  | `host`   | `string`  | No       | The web url to access to the app.              |
+  
+  **Example Request Body:**
+  ```json
+  {
+    "name": "MyAwesomeApp",
+    "host": "https://mywebsite.com"
+  }
+  
+  **Example Response:**
+  ```json
+  {
+    "name": "MyAwesomeApp",
+    "host": "https://mywebsite.com"
+  }
+  
+}

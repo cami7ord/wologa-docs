@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "homologation-process",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
