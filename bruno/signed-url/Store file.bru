@@ -1,0 +1,11 @@
+meta {
+  name: Store file
+  type: http
+  seq: 3
+}
+
+put {
+  url: S3Client { region = "us-east-1" }.use { s3 ->         s3.createBucket(request)         println("$bucketName is ready")     }
+  body: none
+  auth: none
+}

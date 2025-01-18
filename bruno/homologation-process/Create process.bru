@@ -19,7 +19,7 @@ body:json {
     "type": "CreateProcess",
     "country": "ES",
     "program": "Medicina",
-    "degree": "Especialista",
+    "degree": "BACHELORS_DEGREE",
     "person": {
       "name": "John",
       "last": "Doe",
@@ -30,4 +30,16 @@ body:json {
     },
     "responsible": "01JG4B00Z96PN7XE5NHX5QXKC1"
   }
+}
+
+docs {
+  
+  **Possible values for Degree:**
+  
+  ASSOCIATE_DEGREE("Associate Degree (e.g., AA, AS)"),
+      BACHELORS_DEGREE("Bachelor's Degree (e.g., BA, BS)"),
+      MASTERS_DEGREE("Master's Degree (e.g., MA, MS, MBA)"),
+      PROFESSIONAL_DEGREE("Professional Degree (e.g., MD, JD, DDS)"),
+      SPECIALIZED_PROFESSIONAL_DEGREE("Specialized Professional Degree (e.g., Medical Specialization)"),
+      DOCTORATE("Doctorate (e.g., PhD, EdD)");
 }

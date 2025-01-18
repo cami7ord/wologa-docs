@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "signed-url",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
