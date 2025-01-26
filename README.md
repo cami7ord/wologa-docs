@@ -8,6 +8,9 @@ designed to help developers integrate and utilize its functionalities effectivel
 ## **Table of Contents**
 
 - [Overview](#overview)
+- [Auth](#auth)
+- [Homologation Process](#homologation-process)
+- [Signed URLs](#signed-urls) (File upload)
 
 ---
 
@@ -34,8 +37,7 @@ In order to use the API, an application must be created:
 ```json
 {
   "name": "My App Name",
-  "host": "https://myapp.com"
-  // (optional)
+  "host": "https://myapp.com" // (optional)
 }
 ```
 
@@ -236,7 +238,6 @@ For an Undergrad Process, you can update the process with the following _Command
 }
 ```
 </details>
----
 
 ## **Specialist Process**
 
