@@ -243,22 +243,208 @@ For an Undergrad Process, you can update the process with the following _Command
 
 For a Specialist Process, you can update the process with the following _Commands_:
 
-// TODO: Add Specialist Process Commands full examples here after validation:
+<details>
+  <summary>Step 1: Save Title Details</summary>
 
-1. SaveTitleDetails
-2. UploadUndergradCertificates
-3. UploadSpecialistCertificates
-4. UploadPostgradRecognitionCertificates
-5. UploadIESCertificates
-6. UploadAcademicTraining
-7. UploadSpecializedTraining
-8. UploadJobCertificates
-9. UploadAdditionalDocument
-10. UploadMedicalEthicsCertificate
-11. UploadLinguisticCompetenceAccreditation
-12. UploadSVIConsent
-13. UploadSpanishJobCertificates
+```json
+{
+  "type": "SaveTitleDetails",
+  "id": "PROCESS_ID",
+  "name": string,
+  "title_university": string?,
+  "title_country": "ES",
+  "title_in_spanish": boolean,
+  "applicant_from_spanish_country": boolean,
+  "title_issued_in_eu": boolean,
+  "title_older_than_5_years": boolean,
+  "currently_residing_in_spain": boolean?,
+  "worked_or_working_in_spain": boolean?,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
 
+<details>
+  <summary>Step 2: Upload Undergrad Certificates</summary>
+
+```json
+{
+  "type": "UploadUndergradCertificates",
+  "id": "PROCESS_ID",
+  "undergrad_title_url": string,
+  "undergrad_title_apostille_url": string?,
+  "undergrad_title_legalization_url": string?,
+  "undergrad_title_resolution_es_url": string?,
+  "undergrad_title_resolution_other_url": string?,
+  "undergrad_title_resolution_other_apostille_url": string?,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 3: Upload Specialist Certificates</summary>
+
+```json
+{
+  "type": "UploadSpecialistCertificates",
+  "id": "PROCESS_ID",
+  "specialist_title_url": string,
+  "specialist_title_apostille_url": string?,
+  "specialist_title_legalization_url": string?,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 4: Upload Postgrad Recognition Certificates</summary>
+
+```json
+{
+  "type": "UploadPostgradRecognitionCertificates",
+  "id": "PROCESS_ID",
+  "postgrad_recognition_certificate_url": string,
+  "postgrad_recognition_apostille_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 5: Upload IES Certificates</summary>
+
+```json
+{
+  "type": "UploadIESCertificates",
+  "id": "PROCESS_ID",
+  "upload_ies_representation_certificate_url": string,
+  "upload_ies_representation_apostille_url": string,
+  "upload_ies_academic_program_certificate_url": string,
+  "upload_ies_academic_program_apostille_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 6: Upload Academic Training</summary>
+
+```json
+{
+  "type": "UploadAcademicTraining",
+  "id": "PROCESS_ID",
+  "current_employment_situation_url": string,
+  "previous_academic_training_url": string,
+  "previous_academic_training_apostille_url": string,
+  "previous_academic_training_legalization_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 7: Upload Specialized Training</summary>
+
+```json
+{
+  "type": "UploadSpecializedTraining",
+  "id": "PROCESS_ID",
+  "university_entrance_certificate_url": string,
+  "university_entrance_apostille_url": string,
+  "study_plan_with_grades_certificates_url": string,
+  "study_plan_with_grades_apostille_url": string,
+  "study_plan_with_grades_legalization_url": string,
+  "record_of_procedures_url": string?,
+  "record_of_procedures_apostille_url": string?,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 8: Upload Job Certificates</summary>
+
+```json
+{
+  "type": "UploadJobCertificates",
+  "id": "PROCESS_ID",
+  "job_certificates_url": string?,
+  "job_certificates_notarized_url": string,
+  "job_certificates_apostille_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 9: Upload Additional Document</summary>
+
+```json
+{
+  "type": "UploadAdditionalDocument",
+  "id": "PROCESS_ID",
+  "additional_document_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 10: UploadMedicalEthicsCertificate</summary>
+
+```json
+{
+  "type": "UploadAdditionalDocument",
+  "id": "PROCESS_ID",
+  "sworn_declaration_url": string,
+  "ethics_certificate_url": string,
+  "ethics_certificate_apostille_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 11: Upload Linguistic Competence Accreditation</summary>
+
+```json
+{
+  "type": "UploadLinguisticCompetenceAccreditation",
+  "id": "PROCESS_ID",
+  "linguistic_competence_accreditation_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 12: Upload SVI Consent</summary>
+
+```json
+{
+  "type": "UploadLinguisticCompetenceAccreditation",
+  "id": "PROCESS_ID",
+  "svi_consent_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
+
+<details>
+  <summary>Step 13: Upload Spanish Job Certificates</summary>
+
+```json
+{
+  "type": "UploadSpanishJobCertificates",
+  "id": "PROCESS_ID",
+  "head_of_service_certificate_url": string,
+  "manager_certificate_url": string,
+  "autonomous_community_accreditation_url": string,
+  "responsible": "RESPONSIBLE_ID"
+}
+```
+</details>
 ---
 
 # **Signed URLs**
