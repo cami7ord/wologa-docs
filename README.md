@@ -143,79 +143,77 @@ Once you have an app and a user, you can create a process:
 
 For an Undergrad Process, you can update the process with the following _Commands_:
 
-### **Step 1: Save Title Details**
-
+<details>
+  <summary>Step 1: Save Title Details</summary>
+  
 ```json
 {
   "type": "SaveTitleDetails",
   "id": "PROCESS_ID",
   "name": string,
-  "title_university": string
-  ?,
+  "title_university": string?,
   "title_country": "ES",
   "title_in_spanish": boolean,
   "applicant_from_spanish_country": boolean,
   "title_issued_in_eu": boolean,
   "title_older_than_5_years": boolean,
-  "currently_residing_in_spain": boolean
-  ?,
-  "worked_or_working_in_spain": boolean
-  ?,
+  "currently_residing_in_spain": boolean?,
+  "worked_or_working_in_spain": boolean?,
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+</details>
 
-### **Step 2: Upload Undergrad Certificates**
+<details>
+  <summary>Step 2: Upload Undergrad Certificates</summary>
 
 ```json
 {
   "type": "UploadUndergradCertificates",
   "id": "PROCESS_ID",
   "undergrad_title_url": string,
-  "undergrad_title_apostille_url": string
-  ?,
-  "undergrad_title_legalization_url": string
-  ?,
-  "undergrad_title_resolution_es_url": string
-  ?,
-  "undergrad_title_resolution_other_url": string
-  ?,
-  "undergrad_title_resolution_other_apostille_url": string
-  ?,
+  "undergrad_title_apostille_url": string?,
+  "undergrad_title_legalization_url": string?,
+  "undergrad_title_resolution_es_url": string?,
+  "undergrad_title_resolution_other_url": string?,
+  "undergrad_title_resolution_other_apostille_url": string?,
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+</details>
 
-### **Step 3: Upload Academic Certificates**
+<details>
+  <summary>Step 3: Upload Academic Certificates</summary>
 
 ```json
 {
   "type": "UploadAcademicCertificates",
   "id": "PROCESS_ID",
   "academic_certificate_url": string,
-  "academic_certificate_apostille_url": string
-  ?,
-  "academic_certificate_legalization_url": string
-  ?,
+  "academic_certificate_apostille_url": string?,
+  "academic_certificate_legalization_url": string?,
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+</details>
 
-### **Step 4: Upload Job Certificates**
+<details>
+  <summary>Step 4: Upload Job Certificates</summary>
 
 ```json
 {
   "type": "UploadJobCertificates",
   "id": "PROCESS_ID",
-  "job_certificates_url": string
-  ?,
+  "job_certificates_url": string?,
   "job_certificates_notarized_url": string,
   "job_certificates_apostille_url": string,
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+</details>
 
-### **Step 5: Upload Passport**
+<details>
+  <summary>Step 5: Upload Passport</summary>
 
 ```json
 {
@@ -225,8 +223,10 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+</details>
 
-### **Step 6: Accept Responsible Declaration**
+<details>
+  <summary>Step 6: Accept Responsible Declaration</summary>
 
 ```json
 {
@@ -235,7 +235,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
-
+</details>
 ---
 
 ## **Specialist Process**
