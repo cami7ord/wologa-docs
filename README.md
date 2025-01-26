@@ -37,7 +37,7 @@ In order to use the API, an application must be created:
 ```json
 {
   "name": "My App Name",
-  "host": "https://myapp.com" // (optional)
+  "host": "https://myapp.com (optional)"
 }
 ```
 
@@ -114,7 +114,7 @@ Once you have an app and a user, you can create a process:
     "national_id": "123456789",
     "nationality": "CO",
     "birthplace": "CO",
-    "birthdate": "1990-01-01T00:00:00Z"
+    "birthdate": "1990-01-01T00:00:00Z" // (string ISO 8601 format)
   },
   "responsible": "RESPONSIBLE_ID"
 }
@@ -131,7 +131,7 @@ Once you have an app and a user, you can create a process:
 ```json
 {
   "id": "0001KSCCZ175X5M19WGY6857YV",
-  ...,
+  "...": "...",
   "status": "Created"
 }
 ```
@@ -152,15 +152,15 @@ For an Undergrad Process, you can update the process with the following _Command
 {
   "type": "SaveTitleDetails",
   "id": "PROCESS_ID",
-  "name": string,
-  "title_university": string?,
+  "name": "string",
+  "title_university": "string?",
   "title_country": "ES",
-  "title_in_spanish": boolean,
-  "applicant_from_spanish_country": boolean,
-  "title_issued_in_eu": boolean,
-  "title_older_than_5_years": boolean,
-  "currently_residing_in_spain": boolean?,
-  "worked_or_working_in_spain": boolean?,
+  "title_in_spanish": "boolean",
+  "applicant_from_spanish_country": "boolean",
+  "title_issued_in_eu": "boolean",
+  "title_older_than_5_years": "boolean",
+  "currently_residing_in_spain": "boolean?",
+  "worked_or_working_in_spain": "boolean?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -173,12 +173,12 @@ For an Undergrad Process, you can update the process with the following _Command
 {
   "type": "UploadUndergradCertificates",
   "id": "PROCESS_ID",
-  "undergrad_title_url": string,
-  "undergrad_title_apostille_url": string?,
-  "undergrad_title_legalization_url": string?,
-  "undergrad_title_resolution_es_url": string?,
-  "undergrad_title_resolution_other_url": string?,
-  "undergrad_title_resolution_other_apostille_url": string?,
+  "undergrad_title_url": "string",
+  "undergrad_title_apostille_url": "string?",
+  "undergrad_title_legalization_url": "string?",
+  "undergrad_title_resolution_es_url": "string?",
+  "undergrad_title_resolution_other_url": "string?",
+  "undergrad_title_resolution_other_apostille_url": "string?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -191,9 +191,9 @@ For an Undergrad Process, you can update the process with the following _Command
 {
   "type": "UploadAcademicCertificates",
   "id": "PROCESS_ID",
-  "academic_certificate_url": string,
-  "academic_certificate_apostille_url": string?,
-  "academic_certificate_legalization_url": string?,
+  "academic_certificate_url": "string",
+  "academic_certificate_apostille_url": "string?",
+  "academic_certificate_legalization_url": "string?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -206,9 +206,9 @@ For an Undergrad Process, you can update the process with the following _Command
 {
   "type": "UploadJobCertificates",
   "id": "PROCESS_ID",
-  "job_certificates_url": string?,
-  "job_certificates_notarized_url": string,
-  "job_certificates_apostille_url": string,
+  "job_certificates_url": "string?",
+  "job_certificates_notarized_url": "string",
+  "job_certificates_apostille_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -221,7 +221,7 @@ For an Undergrad Process, you can update the process with the following _Command
 {
   "type": "UploadPassport",
   "id": "PROCESS_ID",
-  "passport_url": string,
+  "passport_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -250,15 +250,15 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "SaveTitleDetails",
   "id": "PROCESS_ID",
-  "name": string,
-  "title_university": string?,
+  "name": "string",
+  "title_university": "string?",
   "title_country": "ES",
-  "title_in_spanish": boolean,
-  "applicant_from_spanish_country": boolean,
-  "title_issued_in_eu": boolean,
-  "title_older_than_5_years": boolean,
-  "currently_residing_in_spain": boolean?,
-  "worked_or_working_in_spain": boolean?,
+  "title_in_spanish": "boolean",
+  "applicant_from_spanish_country": "boolean",
+  "title_issued_in_eu": "boolean",
+  "title_older_than_5_years": "boolean",
+  "currently_residing_in_spain": "boolean?",
+  "worked_or_working_in_spain": "boolean?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -271,12 +271,12 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadUndergradCertificates",
   "id": "PROCESS_ID",
-  "undergrad_title_url": string,
-  "undergrad_title_apostille_url": string?,
-  "undergrad_title_legalization_url": string?,
-  "undergrad_title_resolution_es_url": string?,
-  "undergrad_title_resolution_other_url": string?,
-  "undergrad_title_resolution_other_apostille_url": string?,
+  "undergrad_title_url": "string",
+  "undergrad_title_apostille_url": "string?",
+  "undergrad_title_legalization_url": "string?",
+  "undergrad_title_resolution_es_url": "string?",
+  "undergrad_title_resolution_other_url": "string?",
+  "undergrad_title_resolution_other_apostille_url": "string?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -289,9 +289,9 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadSpecialistCertificates",
   "id": "PROCESS_ID",
-  "specialist_title_url": string,
-  "specialist_title_apostille_url": string?,
-  "specialist_title_legalization_url": string?,
+  "specialist_title_url": "string",
+  "specialist_title_apostille_url": "string?",
+  "specialist_title_legalization_url": "string?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -304,8 +304,8 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadPostgradRecognitionCertificates",
   "id": "PROCESS_ID",
-  "postgrad_recognition_certificate_url": string,
-  "postgrad_recognition_apostille_url": string,
+  "postgrad_recognition_certificate_url": "string",
+  "postgrad_recognition_apostille_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -318,10 +318,10 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadIESCertificates",
   "id": "PROCESS_ID",
-  "upload_ies_representation_certificate_url": string,
-  "upload_ies_representation_apostille_url": string,
-  "upload_ies_academic_program_certificate_url": string,
-  "upload_ies_academic_program_apostille_url": string,
+  "upload_ies_representation_certificate_url": "string",
+  "upload_ies_representation_apostille_url": "string",
+  "upload_ies_academic_program_certificate_url": "string",
+  "upload_ies_academic_program_apostille_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -334,10 +334,10 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadAcademicTraining",
   "id": "PROCESS_ID",
-  "current_employment_situation_url": string,
-  "previous_academic_training_url": string,
-  "previous_academic_training_apostille_url": string,
-  "previous_academic_training_legalization_url": string,
+  "current_employment_situation_url": "string",
+  "previous_academic_training_url": "string",
+  "previous_academic_training_apostille_url": "string",
+  "previous_academic_training_legalization_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -350,13 +350,13 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadSpecializedTraining",
   "id": "PROCESS_ID",
-  "university_entrance_certificate_url": string,
-  "university_entrance_apostille_url": string,
-  "study_plan_with_grades_certificates_url": string,
-  "study_plan_with_grades_apostille_url": string,
-  "study_plan_with_grades_legalization_url": string,
-  "record_of_procedures_url": string?,
-  "record_of_procedures_apostille_url": string?,
+  "university_entrance_certificate_url": "string",
+  "university_entrance_apostille_url": "string",
+  "study_plan_with_grades_certificates_url": "string",
+  "study_plan_with_grades_apostille_url": "string",
+  "study_plan_with_grades_legalization_url": "string",
+  "record_of_procedures_url": "string?",
+  "record_of_procedures_apostille_url": "string?",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -369,9 +369,9 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadJobCertificates",
   "id": "PROCESS_ID",
-  "job_certificates_url": string?,
-  "job_certificates_notarized_url": string,
-  "job_certificates_apostille_url": string,
+  "job_certificates_url": "string?",
+  "job_certificates_notarized_url": "string",
+  "job_certificates_apostille_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -384,7 +384,7 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadAdditionalDocument",
   "id": "PROCESS_ID",
-  "additional_document_url": string,
+  "additional_document_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -397,9 +397,9 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadMedicalEthicsCertificate",
   "id": "PROCESS_ID",
-  "sworn_declaration_url": string,
-  "ethics_certificate_url": string,
-  "ethics_certificate_apostille_url": string,
+  "sworn_declaration_url": "string",
+  "ethics_certificate_url": "string",
+  "ethics_certificate_apostille_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -412,7 +412,7 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadLinguisticCompetenceAccreditation",
   "id": "PROCESS_ID",
-  "linguistic_competence_accreditation_url": string,
+  "linguistic_competence_accreditation_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -425,7 +425,7 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadSVIConsent",
   "id": "PROCESS_ID",
-  "svi_consent_url": string,
+  "svi_consent_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
@@ -438,9 +438,9 @@ For a Specialist Process, you can update the process with the following _Command
 {
   "type": "UploadSpanishJobCertificates",
   "id": "PROCESS_ID",
-  "head_of_service_certificate_url": string,
-  "manager_certificate_url": string,
-  "autonomous_community_accreditation_url": string,
+  "head_of_service_certificate_url": "string",
+  "manager_certificate_url": "string",
+  "autonomous_community_accreditation_url": "string",
   "responsible": "RESPONSIBLE_ID"
 }
 ```
