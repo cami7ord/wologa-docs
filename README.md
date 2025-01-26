@@ -98,7 +98,7 @@ an app.
 
 Once you have an app and a user, you can create a process:
 
-- Make a `POST` request to the with a payload like:
+- Make a `POST` request to the `/homologation-process` endpoint with a payload like:
 
 ```json
 {
@@ -445,6 +445,7 @@ For a Specialist Process, you can update the process with the following _Command
 }
 ```
 </details>
+
 ---
 
 # **Signed URLs**
