@@ -243,7 +243,22 @@ For an Undergrad Process, you can update the process with the following _Command
 
 For a Specialist Process, you can update the process with the following _Commands_:
 
-// TODO
+// TODO: Add Specialist Process Commands full examples here:
+
+### Heading
+1. SaveTitleDetails
+2. UploadUndergradCertificates
+3. UploadSpecialistCertificates
+4. UploadPostgradRecognitionCertificates
+5. UploadIESCertificates
+6. UploadAcademicTraining
+7. UploadSpecializedTraining
+8. UploadJobCertificates
+9. UploadAdditionalDocument
+10. UploadMedicalEthicsCertificate
+11. UploadLinguisticCompetenceAccreditation
+12. UploadSVIConsent
+13. UploadSpanishJobCertificates
 
 ---
 
