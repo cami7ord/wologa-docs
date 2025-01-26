@@ -114,7 +114,8 @@ Once you have an app and a user, you can create a process:
     "national_id": "123456789",
     "nationality": "CO",
     "birthplace": "CO",
-    "birthdate": "1990-01-01T00:00:00Z" // (string ISO 8601 format)
+    "birthdate": "1990-01-01T00:00:00Z"
+    // (string ISO 8601 format)
   },
   "responsible": "RESPONSIBLE_ID"
 }
@@ -147,7 +148,7 @@ For an Undergrad Process, you can update the process with the following _Command
 
 <details>
   <summary>Step 1: Save Title Details</summary>
-  
+
 ```json
 {
   "type": "SaveTitleDetails",
@@ -164,6 +165,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -182,6 +184,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -197,6 +200,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -212,6 +216,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -225,6 +230,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -237,6 +243,7 @@ For an Undergrad Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 ## **Specialist Process**
@@ -262,6 +269,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -280,6 +288,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -295,6 +304,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -309,6 +319,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -325,6 +336,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -341,6 +353,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -360,6 +373,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -375,6 +389,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -388,6 +403,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -403,6 +419,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -416,6 +433,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -429,6 +447,7 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
 
 <details>
@@ -444,7 +463,18 @@ For a Specialist Process, you can update the process with the following _Command
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+
 </details>
+
+## **List All Processes State**
+
+- Make a `GET` request to `/homologation-process` endpoint to retrieve an array with the current state of all the
+  processes associated to your app.
+
+## **Retrieve Process State**
+
+- Make a `GET` request to `/homologation-process/{PROCESS_ID}` endpoint to retrieve the current state of a specific
+  process associated to your app.
 
 ---
 
