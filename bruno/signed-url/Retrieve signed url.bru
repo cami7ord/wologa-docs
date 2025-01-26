@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: {{host}}signed-url
+  url: {{host}}signed-url?aggregateId=ABC123&fileName=myfilename.pdf
   body: none
   auth: none
+}
+
+params:query {
+  aggregateId: ABC123
+  fileName: myfilename.pdf
 }

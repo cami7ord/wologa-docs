@@ -5,7 +5,26 @@ meta {
 }
 
 put {
-  url: S3Client { region = "us-east-1" }.use { s3 ->         s3.createBucket(request)         println("$bucketName is ready")     }
-  body: none
+  url: https://s3.us-east-1.amazonaws.com/public.wologa.com/ABC123/01JHYV661CEFHT93A801WAX0JW.pdf?x-id=PutObject&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZMTGWXW6H4K6VSQP%2F20250119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250119T083436Z&X-Amz-Expires=120&X-Amz-SignedHeaders=host%3Bx-amz-meta-aggregate-id%3Bx-amz-meta-file-name&X-Amz-Signature=c4dc13b0244d31e38aad6f8dd21486465d999a23897bfc28f225499e6f0ae928
+  body: multipartForm
   auth: none
+}
+
+params:query {
+  x-id: PutObject
+  X-Amz-Algorithm: AWS4-HMAC-SHA256
+  X-Amz-Credential: AKIAZMTGWXW6H4K6VSQP/20250119/us-east-1/s3/aws4_request
+  X-Amz-Date: 20250119T083436Z
+  X-Amz-Expires: 120
+  X-Amz-SignedHeaders: host;x-amz-meta-aggregate-id;x-amz-meta-file-name
+  X-Amz-Signature: c4dc13b0244d31e38aad6f8dd21486465d999a23897bfc28f225499e6f0ae928
+}
+
+headers {
+  x-amz-meta-aggregate-id: ABC123
+  x-amz-meta-file-name: myfilename.pdf
+}
+
+body:multipart-form {
+  : @file(/Users/camilojimenez/Desktop/fw8ben.pdf)
 }
