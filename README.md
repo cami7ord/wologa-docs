@@ -395,7 +395,7 @@ For a Specialist Process, you can update the process with the following _Command
 
 ```json
 {
-  "type": "UploadAdditionalDocument",
+  "type": "UploadMedicalEthicsCertificate",
   "id": "PROCESS_ID",
   "sworn_declaration_url": string,
   "ethics_certificate_url": string,
@@ -423,7 +423,7 @@ For a Specialist Process, you can update the process with the following _Command
 
 ```json
 {
-  "type": "UploadLinguisticCompetenceAccreditation",
+  "type": "UploadSVIConsent",
   "id": "PROCESS_ID",
   "svi_consent_url": string,
   "responsible": "RESPONSIBLE_ID"
