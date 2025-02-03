@@ -104,6 +104,7 @@ Once you have an app and a user, you can create a process:
 {
   "type": "CreateProcess",
   "country": "ES",
+  // (string ISO 3166-1 alpha-2 format)
   "program": "Medicina",
   "degree": "UNDERGRAD_DEGREE",
   "person": {
@@ -111,6 +112,7 @@ Once you have an app and a user, you can create a process:
     "last": "Doe",
     "email": "jhon@mail.com",
     "gender": "MALE",
+    // (MALE, FEMALE, OTHER)
     "national_id": "123456789",
     "nationality": "CO",
     "birthplace": "CO",
@@ -139,6 +141,30 @@ Once you have an app and a user, you can create a process:
 
 - The response will include the process `id` that must be used to identify any of its modifications.
 - The process is different for each degree type. The following sections describe the process for each degree type.
+
+## **Update Process Basic Info Command**
+
+- Make a `POST` request to the `/homologation-process` endpoint with a payload like:
+
+```json
+{
+  "type": "ProcessBasicInfoUpdated",
+  "country": "ES",
+  "program": "Medicina",
+  "degree": "UNDERGRAD_DEGREE",
+  "person": {
+    "name": "John",
+    "last": "Doe",
+    "email": "jhon@mail.com",
+    "gender": "MALE",
+    "national_id": "123456789",
+    "nationality": "CO",
+    "birthplace": "CO",
+    "birthdate": "1990-01-01T00:00:00Z"
+  },
+  "responsible": "RESPONSIBLE_ID"
+}
+```
 
 ---
 
