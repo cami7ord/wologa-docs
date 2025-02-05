@@ -105,7 +105,7 @@ Once you have an app and a user, you can create a process:
   "type": "CreateProcess",
   "country": "ES",
   // (string ISO 3166-1 alpha-2 format)
-  "program": "Medicina",
+  "program": "Medicine",
   "degree": "UNDERGRAD_DEGREE",
   "person": {
     "name": "John",
@@ -148,10 +148,11 @@ Once you have an app and a user, you can create a process:
 
 ```json
 {
-  "type": "ProcessBasicInfoUpdated",
+  "type": "UpdateProcessBasicInfo",
+  "id": "PROCESS_ID",
   "country": "ES",
-  "program": "Medicina",
-  "degree": "UNDERGRAD_DEGREE",
+  "program": "Engineering",
+  // Degree can't change, you would have to close the process and start a new one
   "person": {
     "name": "John",
     "last": "Doe",
@@ -165,6 +166,7 @@ Once you have an app and a user, you can create a process:
   "responsible": "RESPONSIBLE_ID"
 }
 ```
+Country, program, and person are optional. You can update only the fields you need to change.
 
 ---
 
