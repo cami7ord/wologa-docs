@@ -9,7 +9,7 @@ designed to help developers integrate and use its functionalities effectively.
 
 - [Overview](#overview)
 - [Auth](#auth)
-- [Homologation Process](#homologation-process)
+- [Homologation Process](#homologations)
 - [Calendar](#calendar)
 - [Signed URLs](#signed-urls) (File upload)
 
@@ -92,14 +92,14 @@ Once you have an app, you can create a user for it:
 To create and modify a homologation process, you must send a _Command_, which is a JSON object with a `type` field that
 indicates the action to be performed.
 
-All the requests to the `/homologation-process` endpoint must be authenticated with the `api_key` obtained when creating
+All the requests to the `/homologations` endpoint must be authenticated with the `api_key` obtained when creating
 an app.
 
 ## **Create Process Command**
 
 Once you have an app and a user, you can create a process:
 
-- Make a `POST` request to the `/homologation-process` endpoint with a payload like:
+- Make a `POST` request to the `/homologations` endpoint with a payload like:
 
 ```json
 {
