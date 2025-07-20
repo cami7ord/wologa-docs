@@ -1,7 +1,7 @@
 # Wologa API Documentation
 
 Welcome to the **Wologa API Documentation**! This repository contains the comprehensive documentation for the API,
-designed to help developers integrate and utilize its functionalities effectively.
+designed to help developers integrate and use its functionalities effectively.
 
 ---
 
@@ -23,7 +23,7 @@ endpoints, request/response formats, error handling, and usage examples.
 Download [Bruno](https://www.usebruno.com/) to view the API documentation in a more user-friendly format, and play with
 the API requests.
 
-- The API provides 3 main collections: `auth` , `homologation-process` and `signed-url` (for upload files).
+- The API provides 3 main collections: `auth` , `homologations` and `signed-url` (for upload files).
 
 ---
 
@@ -87,7 +87,7 @@ Once you have an app, you can create a user for it:
 
 ---
 
-# **Homologation Process**
+# **Homologations**
 
 To create and modify a homologation process, you must send a _Command_, which is a JSON object with a `type` field that
 indicates the action to be performed.
@@ -145,7 +145,7 @@ Once you have an app and a user, you can create a process:
 
 ## **Update Process Basic Info Command**
 
-- Make a `POST` request to the `/homologation-process` endpoint with a payload like:
+- Make a `POST` request to the `/homologations` endpoint with a payload like:
 
 ```json
 {
@@ -497,12 +497,12 @@ For a Specialist Process, you can update the process with the following _Command
 
 ## **List All Processes State**
 
-- Make a `GET` request to `/homologation-process` endpoint to retrieve an array with the current state of all the
+- Make a `GET` request to `/homologations` endpoint to retrieve an array with the current state of all the
   processes associated to your app.
 
 ## **Retrieve Process State**
 
-- Make a `GET` request to `/homologation-process/{PROCESS_ID}` endpoint to retrieve the current state of a specific
+- Make a `GET` request to `/homologations/{PROCESS_ID}` endpoint to retrieve the current state of a specific
   process associated to your app.
 
 ---
